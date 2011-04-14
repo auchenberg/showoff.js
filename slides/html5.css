@@ -1,0 +1,153 @@
+html, body {
+  background: #000;
+}
+
+  body {
+      font-family: Helvetica, Arial, sans-serif;
+  }
+
+h1 { font-size: 3em; font-weight: bold; }
+
+
+#preso {
+  height: 700px;
+}
+
+
+.slide {
+  background: #fff;
+  height: 700px;
+}
+
+.slide .content {   padding-left: 30px; }
+.slide h1 {
+  text-align: right;
+  padding-right: 50px;
+  margin-top: 50px;
+  display: block;
+  position:absolute;
+  bottom: 200px;
+  right: 0;
+}
+
+.slide h2 {
+  text-align: right;
+  padding-right: 50px;
+  display: block;
+  position:absolute;
+  bottom: 160px;
+  right: 0;
+  color: #676767;
+  font-weight: bold;
+  font-size: 2.4em;
+}
+
+
+.slide h1,
+.slide h2,
+.slide h3 { margin-left: 0; }
+
+.slide h2, .slide h3 { text-align: left; }
+
+.slide .content.title-slide div.title { position: absolute; top:200px; left: 20px; }
+.slide .content.title-slide h1,
+.slide .content.title-slide h3 { position: static; }
+
+.slide .bullets ul li {text-align:left; font-weight: bold; }
+.slide .smbullets ul li { text-align: left; }
+
+.slide .content.section {
+  background: #f1e9d9;
+  height: 100%;
+}
+pre.sh_sourceCode {
+   background: transparent;
+}
+#spinner {
+    margin-left: 450px;
+}
+
+
+#footer {
+    background: #000;
+    height: 60px;
+    color: #000;
+    line-height: 60px;
+    font-size: 20px;
+}
+#footer:before {
+    color: #fff;
+    margin-right:40px;
+    content : 'HTML(5) in a 2011 reality';
+}
+
+#footer:after {
+    color: #fff;
+    content : '@auchenberg  kenneth.io';
+    float: right;
+    word-spacing: 20px;
+}
+
+
+.arrow {
+  background: rgba(0,0,0, 0.5);
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  color: #fff;
+  border-radius:10px;
+}
+
+.arrow.twitter { right: 130px; }
+
+/* about */
+.about-me img { position: absolute; }
+.about-me .zyb { top: 40px; left: 40px; }
+.about-me .vodafone { top: 100px; right: 200px; }
+.about-me .podio { bottom: 250px; left: 200px; }
+
+a.demo {margin: 50px 0 0 50px; font-size: 2em; display:block;}
+/* form styling */
+input:invalid { -webkit-box-shadow: rgba(0, 0, 0, 0.199219) 0px 2px 3px inset, rgba(255, 0, 0, 0.796875) 0px 0px 5px; border-color: #E88; }
+
+.margin-50 { margin-top: 50px; }
+
+#holder { border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto; position: relative; bottom: 100px; }
+#holder.hover { border: 10px dashed #333; }
+
+pre { font-size: 2em;  margin-right: 100px; }
+
+.inthebox img { margin-bottom: 300px;}
+
+.thanks { display: table;width: 100%; }
+
+.thanks .cell { display:table-cell; vertical-align:middle;}
+.thanks .cell > h1 { margin: 0 auto;position:static; text-align: center; font-size: 4em; }
+
+
+.chart table {
+	width:600px;
+	text-align:left;
+	position:relative;
+	top: -100px;
+	left: 100px;
+}
+
+.chart table th { height: 30px; line-height: 30px; }
+.chart table thead th { border-bottom: 2px solid #bebebe; margin-bottom: 10px; text-align: center; margin-bottom: 5px; }
+.chart table tbody tr { height: 30px;}
+
+input[type=range].custom {
+    -webkit-appearance: none;
+    background-color: Red;
+    width: 200px;
+}
+
+input[type=range].custom::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: Blue;
+    opacity: 0.8;
+    width: 10px;
+    height: 40px;
+}

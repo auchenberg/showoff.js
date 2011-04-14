@@ -1,0 +1,208 @@
+/**
+ * Node Slideshow [VERSION]
+ * [DATE]
+ * Corey Hart @ http://www.codenothing.com
+ * This stylesheet due in large part to Rob Flaherty(rob@ravelrumba.com)
+ */
+@font-face {
+	font-family: 'ChunkFiveRegular';
+	src: url('fonts/Chunkfive-webfont.eot');
+	src: local('☺'), url('fonts/Chunkfive-webfont.woff') format('woff'), url('fonts/Chunkfive-webfont.ttf') format('truetype'), url('fonts/Chunkfive-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Meyer Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;}:focus{outline:0}body{line-height:1;color:black;background:white}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:normal}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:""""}
+
+/* Core Styles */
+html{ font-size:100%; overflow: hidden; }
+body { font-size: 62.5%; line-height: 1.5; font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; color: #333; background:#f5f6f6; }
+input, select, textarea { font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; font-size: 1em; }
+:focus { outline: 1px; }
+strong{ font-weight:bold; }
+em { font-style: italic; }
+hr { display: none; }
+img { display: block;  border: 3px solid #aaa; padding: 3px; background: white; margin: 0 10px; }
+a img { border: none; } 
+cite { font-style: normal; } 
+code { background: #ececec; padding: 0 3px; }
+blockquote { margin:0 0 24px 32px; border-left:7px solid #ececec; padding-left:16px; }
+blockquote p { margin:0; }
+.center { text-align: center; margin: 0 auto; }
+.left { float: left; }
+.right { float: right; }
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* Links */
+a:link, a:visited, a:active { color: #3c5dc9; text-decoration: underline; }
+a:hover { color: #3c5dc9; text-decoration:none; }
+
+/* Slider App Styles */
+#deck { overflow: hidden; }
+section { padding: 0 30px 30px; float: left; overflow: auto; }
+h1 { font-family: 'ChunkFiveRegular', Arial; font-size:50px; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8); }
+h2 { font-family: 'ChunkFiveRegular', Arial; font-size: 30px; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8); }
+p, li { font-family: Arial; font-size:20px; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8); }
+p { margin: 0 0 1em; }
+li { list-style-type: disc; margin-left: 40px; }
+pre { font-size: 20px; font-family: monospace; background: #ddd; border: 3px solid #555; padding: 5px; overflow: auto; }
+hgroup {margin: 0 0 20px;}
+header { overflow: hidden; color: #000; background-image: -moz-linear-gradient(top, #c5c5c5, #b0b0b0); background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #c5c5c5),color-stop(1, #b0b0b0)); border-top:1px solid #dcdcdc; border-bottom: 1px solid rgb(105, 105, 105); text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); font-family: "Lucida Grande"; padding: 1px 10px; overflow:hidden; }
+header h1 { float: left; font-size: 18px;  line-height: 32px;}
+.center { margin: 0 auto; }
+.smallprint { font-size: 14px; }
+
+html, body {
+  background: #000;
+}
+
+  body {
+      font-family: Helvetica, Arial, sans-serif;
+  }
+
+h1 { font-size: 3em; font-weight: bold; }
+
+
+#preso {
+  height: 700px;
+}
+
+
+.slide {
+  background: #fff;
+  height: 700px;
+}
+
+.slide .content {   padding-left: 30px; }
+.slide h1 {
+  text-align: right;
+  padding-right: 50px;
+  margin-top: 50px;
+  display: block;
+  position:absolute;
+  bottom: 200px;
+  right: 0;
+}
+
+.slide h2 {
+  text-align: right;
+  padding-right: 50px;
+  display: block;
+  position:absolute;
+  bottom: 160px;
+  right: 0;
+  color: #676767;
+  font-weight: bold;
+  font-size: 2.4em;
+}
+
+
+.slide h1,
+.slide h2,
+.slide h3 { margin-left: 0; }
+
+.slide h2, .slide h3 { text-align: left; }
+
+.slide .content.title-slide div.title { position: absolute; top:200px; left: 20px; }
+.slide .content.title-slide h1,
+.slide .content.title-slide h3 { position: static; }
+
+.slide .bullets ul li {text-align:left; font-weight: bold; }
+.slide .smbullets ul li { text-align: left; }
+
+.slide .content.section {
+  background: #f1e9d9;
+  height: 100%;
+}
+pre.sh_sourceCode {
+   background: transparent;
+}
+#spinner {
+    margin-left: 450px;
+}
+
+
+#footer {
+    background: #000;
+    height: 60px;
+    color: #000;
+    line-height: 60px;
+    font-size: 20px;
+}
+#footer:before {
+    color: #fff;
+    margin-right:40px;
+    content : 'HTML(5) in a 2011 reality';
+}
+
+#footer:after {
+    color: #fff;
+    content : '@auchenberg  kenneth.io';
+    float: right;
+    word-spacing: 20px;
+}
+
+
+.arrow {
+  background: rgba(0,0,0, 0.5);
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  color: #fff;
+  border-radius:10px;
+}
+
+.arrow.twitter { right: 130px; }
+
+/* about */
+.about-me img { position: absolute; }
+.about-me .zyb { top: 40px; left: 40px; }
+.about-me .vodafone { top: 100px; right: 200px; }
+.about-me .podio { bottom: 250px; left: 200px; }
+
+a.demo {margin: 50px 0 0 50px; font-size: 2em; display:block;}
+/* form styling */
+input:invalid { -webkit-box-shadow: rgba(0, 0, 0, 0.199219) 0px 2px 3px inset, rgba(255, 0, 0, 0.796875) 0px 0px 5px; border-color: #E88; }
+
+.margin-50 { margin-top: 50px; }
+
+#holder { border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto; position: relative; bottom: 100px; }
+#holder.hover { border: 10px dashed #333; }
+
+pre { font-size: 2em;  margin-right: 100px; }
+
+.inthebox img { margin-bottom: 300px;}
+
+.thanks { display: table;width: 100%; }
+
+.thanks .cell { display:table-cell; vertical-align:middle;}
+.thanks .cell > h1 { margin: 0 auto;position:static; text-align: center; font-size: 4em; }
+
+
+.chart table {
+	width:600px;
+	text-align:left;
+	position:relative;
+	top: -100px;
+	left: 100px;
+}
+
+.chart table th { height: 30px; line-height: 30px; }
+.chart table thead th { border-bottom: 2px solid #bebebe; margin-bottom: 10px; text-align: center; margin-bottom: 5px; }
+.chart table tbody tr { height: 30px;}
+
+input[type=range].custom {
+    -webkit-appearance: none;
+    background-color: Red;
+    width: 200px;
+}
+
+input[type=range].custom::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: Blue;
+    opacity: 0.8;
+    width: 10px;
+    height: 40px;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "se-toget",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "directories": {
+    "lib": "."
+  },
+  "engines": {
+    "node": "0.4.2"
+  },
+  "dependencies": {
+    "express": "*",
+    "faye": "*",
+    "ejs": "*"
+  },
+  "files": [
+    ""
+  ],
+  "author": "Kenneth Auchenberg"
+}
